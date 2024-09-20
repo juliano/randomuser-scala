@@ -9,10 +9,13 @@ inThisBuild(List(
     )
 ))
 
+sonatypeCredentialHost := "s01.oss.sonatype.org"
+sonatypeRepository := "https://s01.oss.sonatype.org/service/local"
+
 lazy val root = project
   .in(file("."))
   .settings(
-    name         := "randomuser",
+    name         := "random-user",
     scalaVersion := "3.5.0",
     scalafmtOnCompile := true,
     libraryDependencies ++= Seq(
@@ -24,19 +27,5 @@ lazy val root = project
       "dev.zio"                       %% "zio-test-sbt" % "2.1.9" % Test
     ),
     testFrameworks += new TestFramework("zio.test.sbt.ZTestFramework"),
-    scalacOptions := Seq(
-      "-deprecation",
-      "-encoding",
-      "utf-8",
-      "-explain-types",
-      "-feature",
-      "-unchecked",
-      "-language:postfixOps",
-      "-language:higherKinds",
-      "-language:implicitConversions",
-      "-language:existentials",
-      "-Xfatal-warnings",
-      "-Xkind-projector",
-      "-Yretain-trees"
-    )
+    licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
   )

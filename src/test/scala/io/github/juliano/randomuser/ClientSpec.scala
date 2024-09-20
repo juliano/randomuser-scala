@@ -85,7 +85,7 @@ object ClientSpec extends ZIOSpecDefault:
     test("noinfo") {
       for content <- Client.fetch(Params(2).noInfo)
       yield assertTrue(content.results.length == 2 && content.info.isEmpty)
-    },
+    }
   ).provideShared(Client.default) @@ nondeterministic
 
   def assertPresence(content: Content, fields: List[Fields]): TestResult =

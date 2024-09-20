@@ -16,4 +16,5 @@ object Client:
   val default: ULayer[Client] =
     ZLayer.make[Client](HttpClientZioBackend.layer(), layer).orDie
 
-  def fetch(params: Params = Params()): ZIO[Client, ApiException, Content] = ZIO.serviceWithZIO(_.fetch(params))
+  def fetch(params: Params = Params()): ZIO[Client, ApiException, Content] =
+    ZIO.serviceWithZIO(_.fetch(params))
