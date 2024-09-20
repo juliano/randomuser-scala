@@ -1,10 +1,6 @@
 # Scala/ZIO Random User Generator Client
 
-Scala 3 client implementation for the [Random User Generator API](https://randomuser.me/), built using the ZIO and Sttp.
-
-# Scala/ZIO Random User Generator Client
-
-This project is an open-source Scala client for the [Random User Generator API](https://randomuser.me/), built using the ZIO framework.
+Scala 3 client implementation for the [Random User Generator API](https://randomuser.me/), built using [ZIO](https://zio.dev/) and [Sttp](https://sttp.softwaremill.com/en/stable/).
 
 ## Getting Started
 
