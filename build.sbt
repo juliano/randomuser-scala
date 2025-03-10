@@ -2,7 +2,7 @@ import org.scalafmt.sbt.ScalafmtPlugin.autoImport.scalafmtOnCompile
 
 inThisBuild(List(
     organization := "io.github.juliano",
-    version := "0.1.3",
+    version := "0.1.4",
     homepage := Some(url("https://github.com/juliano/randomuser-scala")),
     licenses := List("MIT License" -> url("https://github.com/juliano/randomuser-scala/blob/main/LICENSE")),
     developers := List(
@@ -21,7 +21,7 @@ lazy val root = project
     scalafmtOnCompile := true,
     libraryDependencies ++= Seq(
       "dev.zio"                       %% "zio"          % "2.1.16",
-      "dev.zio"                       %% "zio-json"     % "0.7.36",
+      "dev.zio"                       %% "zio-json"     % "0.7.39",
       "com.softwaremill.sttp.client3" %% "zio"          % "3.10.3",
       "com.softwaremill.sttp.client3" %% "zio-json"     % "3.10.3",
       "dev.zio"                       %% "zio-test"     % "2.1.16" % Test,
