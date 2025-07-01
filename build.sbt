@@ -20,12 +20,12 @@ lazy val root = project
     scalaVersion := "3.5.0",
     scalafmtOnCompile := true,
     libraryDependencies ++= Seq(
-      "dev.zio"                       %% "zio"          % "2.1.16",
-      "dev.zio"                       %% "zio-json"     % "0.7.39",
-      "com.softwaremill.sttp.client3" %% "zio"          % "3.10.3",
-      "com.softwaremill.sttp.client3" %% "zio-json"     % "3.10.3",
-      "dev.zio"                       %% "zio-test"     % "2.1.16" % Test,
-      "dev.zio"                       %% "zio-test-sbt" % "2.1.16" % Test
+      "dev.zio"                       %% "zio"          % "2.1.19",
+      "dev.zio"                       %% "zio-json"     % "0.7.44",
+      "com.softwaremill.sttp.client3" %% "zio"          % "3.11.0",
+      "com.softwaremill.sttp.client3" %% "zio-json"     % "3.11.0",
+      "dev.zio"                       %% "zio-test"     % "2.1.19" % Test,
+      "dev.zio"                       %% "zio-test-sbt" % "2.1.19" % Test
     ),
     testFrameworks += new TestFramework("zio.test.sbt.ZTestFramework"),
     licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

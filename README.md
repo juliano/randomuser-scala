@@ -7,7 +7,7 @@ Scala 3 client implementation for the [Random User Generator API](https://random
 Add the following to your build.sbt:
 
 ```scala
-libraryDependencies += "io.github.juliano" % "random-user_3" % "0.1.3"
+libraryDependencies += "io.github.juliano" % "random-user_3" % "0.1.4"
 ```
 
 ## Usage
