@@ -10,6 +10,8 @@ inThisBuild(List(
     )
 ))
 
+sonatypeCredentialHost := "central.sonatype.com"
+
 lazy val root = project
   .in(file("."))
   .settings(
